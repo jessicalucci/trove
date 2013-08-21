@@ -416,6 +416,8 @@ class Instance(BuiltInstance):
     def create(cls, context, name, flavor_id, image_id,
                databases, users, service_type, volume_size, backup_id):
 
+        print "CREATING"
+
         client = create_nova_client(context)
         try:
             flavor = client.flavors.get(flavor_id)
