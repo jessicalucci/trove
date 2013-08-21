@@ -174,7 +174,8 @@ class InstanceController(wsgi.Controller):
 
     def create(self, req, body, tenant_id):
         # TODO(hub-cap): turn this into middleware
-        LOG.info(_("Creating a database instance for tenant '%s'") % tenant_id)
+        print "INSTANCE CREAAATE"
+        LOG.info(_("Creating a database instance WHAT? for tenant '%s'") % tenant_id)
         LOG.info(_("req : '%s'\n\n") % req)
         LOG.info(_("body : '%s'\n\n") % body)
         context = req.environ[wsgi.CONTEXT_KEY]
