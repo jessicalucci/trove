@@ -73,7 +73,7 @@ def validate_volume_size(size):
     max_size = CONF.max_accepted_volume_size
     if long(size) > max_size:
         msg = ("Volume 'size' cannot exceed maximum "
-               "of %d Gb, %s cannot be accepted."
+               "of %d Gb BRO, %s cannot be accepted."
                % (max_size, size))
         raise exception.VolumeQuotaExceeded(msg)
 
